@@ -1,7 +1,5 @@
 pipeline {
-  agent {
-    label 'sam-jenkins-node-keys'
-  }
+  agent any
   environment {
     PIPELINE_USER_CREDENTIAL_ID = 'awscredentialsdev'
     SAM_TEMPLATE = 'samm-app/template.yaml'
