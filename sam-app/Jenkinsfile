@@ -7,7 +7,7 @@ pipeline {
     TESTING_STACK_NAME = 'sam-app-dev'
     TESTING_PIPELINE_EXECUTION_ROLE = 'arn:aws:iam::569616672745:role/aws-sam-cli-managed-dev-pipe-PipelineExecutionRole-1JFZDDBZ8EYB7'
     TESTING_CLOUDFORMATION_EXECUTION_ROLE = 'arn:aws:iam::569616672745:role/aws-sam-cli-managed-dev-p-CloudFormationExecutionR-PM3M7N3F8FLE'
-    TESTING_ARTIFACTS_BUCKET = 'jenkinsnitesh-bloom'
+    TESTING_ARTIFACTS_BUCKET = 'jenkinsnitesh'
     // If there are functions with "Image" PackageType in your template,
     // uncomment the line below and add "--image-repository ${TESTING_IMAGE_REPOSITORY}" to
     // testing "sam package" and "sam deploy" commands.
@@ -16,7 +16,7 @@ pipeline {
     PROD_STACK_NAME = 'sam-app-prod'
     PROD_PIPELINE_EXECUTION_ROLE = 'arn:aws:iam::569616672745:role/aws-sam-cli-managed-prod-pip-PipelineExecutionRole-13BVZ28COA8E0'
     PROD_CLOUDFORMATION_EXECUTION_ROLE = 'arn:aws:iam::569616672745:role/aws-sam-cli-managed-prod-CloudFormationExecutionR-YN6HDAQ5OSGZ'
-    PROD_ARTIFACTS_BUCKET = 'jenkinsnitesh-bloom'
+    PROD_ARTIFACTS_BUCKET = 'jenkinsnitesh'
     // If there are functions with "Image" PackageType in your template,
     // uncomment the line below and add "--image-repository ${PROD_IMAGE_REPOSITORY}" to
     // prod "sam package" and "sam deploy" commands.
